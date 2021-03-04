@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/64ba2bf2e0.js" crossorigin="anonymous"></script>
+        <script src="js/formulario.js"></script>
+        <title>Formulário de Cadastro</title>
+    </head>
+    <body>
+        <div class="container">
+        
+            <div class="content">
+                <div class="firts-column">
+                    <h2>Olá, Seja bem-vindo!</h2>
+                    <p class="description">Faça parte da maior escola híbrida do Brasil!</p>
+                    <p class="description">Quer conhecer mais sobre nossa escola?</p>
+                    <button class="btn">nossa escola</button>
+                </div>
+                <div class="second-column">
+                    <h2 class="title">Formulário</h2> 
+                    <div class="social-medias">
+                        <ul class="list-social-media">
+                            <li class="item-social-media"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                            <li class="item-social-media"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li class="item-social-media"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <form class="formulario">
+                        <input type="text" id="js-name" placeholder="Nome">
+                        <input type="email" id="js-email" placeholder="Email">
+                        <input  type="text" id="js-nascimento" placeholder="Nascimento" 
+                            onfocus="(this.type='date')"
+                            onblur="(this.type='text')">
+                        <!---<input type="date" placeholder="nascimento">-->
+                        <input type="number" id="js-matricula" placeholder="Matricula">
+                        <input type="number" id="js-serie" placeholder="Serie">
+                        <input type="text" id="js-estudou" placeholder="Já estudou conosco?">
+                        <button class="btn" onclick="enviarDados()" id="enviar">enviar</button>
+                
+                    </form>
+                </div>    
+            </div>
+        </div>
+    </body>
+</html>
